@@ -2,12 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
 	<link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Jieliang's Personal Portfolio</title>
-</head>
+</head>	
 <body>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<div class="navigation">
 		<nav>
 			<ul>
@@ -21,13 +23,18 @@
 
 	<header class="intro">
 		<img src="images/potrait.jpg" alt="potrait"/>
-		<p>Hi, I'm Jieliang.</p>
+		<p>Hi, I'm Jieliang. Welcome to my portfolio website.</p>
 	</header>
 
-	<section class="about-me">
+	<section class="about-me" id="main">
 		<h2>About Me</h2>
 		<div class="info">
-			<p>Something about myself!</p>		
+			<div>
+				<p>Hello! I love solving coding problems and developing intuitive and useful websites and software. I possess great interest in various fields of computer science and engineering, including parallel computing, machine learning and front end development.</p>
+				<br>
+				<p>I am a fast and independent learner, and have been able to pick up new frameworks and technologies easily in my previous <a href="projects.html">projects</a> and <a href="experience.html">internships</a>. I am currently learning about web development, particularly front end development and designing beautiful and accessibile websites!</p>
+			</div>
+			
 			<img src="images/potrait-2.jpg" alt="potrait-2"/>
 		</div>
 	</section>
@@ -35,18 +42,41 @@
 	<section class="education">
 		<h2>Education</h2>
 		<div class="info">
-			<p>
-				Something about my education!
-			</p>
+			<div>
+				<p>
+					I'm currently an Engineering Junior at the University of Michigan, Ann Arbor. I spent my time as an undergraduate exploring the various fields of computer engineering ranging from computer hardware to software.
+				</p>
+				<br>
+
+				<p>Here are a few courses which I have taken:
+					<ul>
+						<li>Computer Network</li>
+						<li>Computer Organisation</li>
+						<li>Data Structure and Algorithm</li>
+						<li>Database Systems</li>
+						<li>Operating Systems</li>
+						<li>Probability and Statistics</li>
+						<li>Information Security</li>
+						<li>Web Design, Development and Accessibility</li>
+					</ul>
+				</p>
+			</div>
+			<img src="images/umich.jpg" alt="universityOfMichiganLogo"/>
 		</div>
+		
+		
 	</section>
 
 	<section class="interests">
 		<h2>Interests</h2>
 		<div class="info">
 			<p>
-				Something about my personal interests!
+				I love travelling and photography. 
 			</p>
+			<p>
+				I have travelled various states within America, as well as countries in Asia such as Korea and Japan.
+			</p>
+			<p>Check out my <a href="blog.html">blog</a> for more information as well as beautiful sceneries and photos.</p>
 		</div>
 	</section>
 
@@ -54,16 +84,16 @@
 		<h2>Contact Me</h2>
 		<form>
 			<label for="name">Name</label>
-			<input id="name" type="text" name="name" placeholder="Your Name">	
+			<input id="name" type="text" name="name" placeholder="Your Name" required="true">	
 
 			<label for="email">Email</label>
-			<input id="email" type="text" name="email" placeholder="Your Email">	
+			<input id="email" type="email" name="email" placeholder="Your Email" required="true">	
 
 			<label for="content">Content</label>
-			<textarea id="content" name="content" placeholder="Write here"></textarea>
+			<textarea id="content" name="content" placeholder="Write here" required="true"></textarea>
 
 			<input type="submit" name="Submit">
-		</form>
+		</form>	
 
 
 		</div>

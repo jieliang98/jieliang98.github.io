@@ -1,10 +1,10 @@
-header {
+/*header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 80px 50px;
-}
+}*/
 
 .san-fran {
 	margin: 0 100px;
@@ -20,13 +20,36 @@ header {
 .gallery {
 	margin: 30px 0;
 	display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+	grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+
 }
 
 .image1 {
 	width: 100%;
 	background: purple;
+}
+
+@media screen and (min-width: 800px){
+	.gallery {
+		margin: 30px 0;
+		display: grid;
+	  grid-template-columns: 200px 200px 200px;
+	  grid-template-rows: 200px 200px;
+	  grid-row-gap: 20px;
+	  grid-column-gap: 20px;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.gallery {
+		margin: 30px 0;
+		display: grid;
+	  grid-template-columns: 250px 250px 250px;
+	  grid-template-rows: 250px 250px;
+	  grid-row-gap: 20px;
+	  grid-column-gap: 20px;
+	}
 }

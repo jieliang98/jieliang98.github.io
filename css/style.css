@@ -1,13 +1,34 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Source Sans Pro';
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 3.5rem;
 }
 
 section {
 	background-image: linear-gradient(#f7f7f7,#fff);
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 12px;
+  position: absolute;
+  top: -40px; 
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  color: black;
+}
+
+.skip a:focus {
+  top: 0px;
 }
 
 .navigation {
@@ -53,10 +74,12 @@ section {
 
 .intro p {
 	font-size: 1.5rem;
+	text-align: center;
 }
 
 .about-me {
-	padding: 80px 50px;		
+	padding: 100px 50px;
+	min-height: 300px;		
 }
 
 .about-me .info {
@@ -64,26 +87,66 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	flex-direction: row;
+	flex-direction: column-reverse;
 
 	margin-top: 20px;
+}
 
+.about-me a {
+	text-decoration: none;
+	color: purple;
 }
 
 .about-me .info img {
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	box-shadow: 10px 10px purple;
+	margin: 30px;
+}
+
+.about-me .info p {
+	font-size: 1.5rem;
+	line-height: 1.75rem;
 }
 
 .education {
-	padding: 80px 50px;
+	padding: 100px 50px;
+	min-height: 300px;	
 }
 
 .education .info {
 	margin-top: 20px;
-	min-height: 200px; /*temporary*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column-reverse;
 }
+
+.education p {
+	font-size: 1.5rem;
+	line-height: 1.75rem;	
+}
+
+.education ul {
+	font-size: 1.5rem;
+	line-height: 1.75rem;	
+  	list-style: none;
+}
+
+.education li::before {
+	content: "•"; 
+	color: purple;
+  	display: inline-block;
+  	width: 1em;
+  	margin-left: -1em
+ }
+
+ .education img {
+ 	height: 250px;
+ 	width: 250px;
+ 	box-shadow: 10px 10px black;
+ 	margin: 30px;
+ }
 
 .interests {
 	padding: 80px 50px;
@@ -91,7 +154,22 @@ section {
 
 .interests .info {
 	margin-top: 20px;
-	min-height: 200px; /*temporary*/
+	min-height: 300px;
+	display: flex;
+/*	align-items: center;*/
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+.interests p {
+	font-size: 1.5rem;
+	line-height: 2.5rem;	
+}
+
+.interests a {
+	text-decoration: none;
+	color: purple;
 }
 
 .contact {
@@ -102,7 +180,11 @@ section {
 	margin-top: 20px;
 }
 
-.contact input[type=text], #content {
+.contact label {
+	font-size: 1.2rem;
+}
+
+.contact input[type=text], input[type=email], #content {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -133,4 +215,29 @@ footer {
 	padding: 20px;
 	text-align: center;
 }
+
+@media screen and (min-width: 800px){
+	.about-me .info {
+		flex-direction: row;
+	}
+
+	.education .info {
+		flex-direction: row;
+	}
+
+	.education ul {
+		columns: 2;
+	  	-webkit-columns: 2;
+	  	-moz-columns: 2;
+  	}
+}
+
+@media screen and (min-width: 1000px){
+	.interests p {
+		text-align: center;
+	}
+}
+
+
+
 
