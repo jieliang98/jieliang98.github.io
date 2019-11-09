@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
 	<link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="javascript/main.js"></script>
 	<title>Jieliang's Personal Portfolio</title>
 </head>	
 <body>
@@ -21,8 +23,24 @@
 		</nav>
 	</div>
 
+	<div class="navigation-mobile">
+		<div class="top-bar">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			   <i class="fa fa-bars"></i>
+			 </a>
+		</div>
+		<nav id="navigation-hamburger">
+			<ul>
+				<li><a href="index.html" id="current">About</a></li>
+				<li><a href="experience.html">Experience</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</nav>
+	</div>
+
 	<header class="intro">
-		<img src="images/potrait.jpg" alt="potrait"/>
+		<img src="images/website-logo.png" alt="potrait"/>
 		<p>Hi, I'm Jieliang. Welcome to my portfolio website.</p>
 	</header>
 
@@ -35,7 +53,7 @@
 				<p>I am a fast and independent learner, and have been able to pick up new frameworks and technologies easily in my previous <a href="projects.html">projects</a> and <a href="experience.html">internships</a>. I am currently learning about web development, particularly front end development and designing beautiful and accessibile websites!</p>
 			</div>
 			
-			<img src="images/potrait-2.jpg" alt="potrait-2"/>
+			<img id="about-img" src="images/potrait-2.jpg" alt="potrait-2"/>
 		</div>
 	</section>
 
@@ -61,7 +79,7 @@
 					</ul>
 				</p>
 			</div>
-			<img src="images/umich.jpg" alt="universityOfMichiganLogo"/>
+			<img id="about-img" src="images/umich.jpg" alt="universityOfMichiganLogo"/>
 		</div>
 		
 		
@@ -70,13 +88,16 @@
 	<section class="interests">
 		<h2>Interests</h2>
 		<div class="info">
-			<p>
+			<div>
+				<p>
 				I love travelling and photography. 
-			</p>
-			<p>
-				I have travelled various states within America, as well as countries in Asia such as Korea and Japan.
-			</p>
-			<p>Check out my <a href="blog.html">blog</a> for more information as well as beautiful sceneries and photos.</p>
+				</p>
+				<p>
+					I have travelled various states within America, as well as countries in Asia such as Korea and Japan.
+				</p>
+				<p>Check out my <a href="blog.html">blog</a> for more information as well as beautiful sceneries and photos.</p>
+			</div>	
+			<img id="about-img" src="images/potrait.jpg" alt="universityOfMichiganLogo"/>
 		</div>
 	</section>
 
@@ -94,7 +115,6 @@
 
 			<input type="submit" name="Submit">
 		</form>	
-
 
 		</div>
 	</section>

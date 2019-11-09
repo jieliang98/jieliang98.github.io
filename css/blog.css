@@ -6,8 +6,8 @@
 	padding: 80px 50px;
 }*/
 
-.san-fran {
-	margin: 0 100px;
+.san-fran, .new-york{
+	margin: 50px 100px;
 	text-align: center;
 }
 
@@ -18,38 +18,115 @@
 }
 
 .gallery {
-	margin: 30px 0;
+	margin: 60px 0;
 	display: grid;
-	grid-template-columns: 150px 150px 150px;
-  grid-template-rows: 150px 150px;
+	grid-template-columns: auto;
   grid-row-gap: 15px;
   grid-column-gap: 15px;
 
 }
 
-.image1 {
-	width: 100%;
-	background: purple;
+.blog-image {
+	width: 100vw;
+	height: 100vw;
+	background: transparent;
+
+	border: 1px solid #f1f1f1;
+  	perspective: 1000px;
 }
 
-@media screen and (min-width: 800px){
+.front img {
+	width: 100vw;
+	height: 100vw;
+}
+
+.inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.front, .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.front {
+	background-color: #bbb;
+  	color: black;
+}
+
+.back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-even {
+	background-color: dodgerblue;
+}
+
+.back-odd {
+	background-color: red;
+}
+
+
+/*
+@media screen and (min-width: 100px){
 	.gallery {
 		margin: 30px 0;
 		display: grid;
 	  grid-template-columns: 200px 200px 200px;
-	  grid-template-rows: 200px 200px;
 	  grid-row-gap: 20px;
 	  grid-column-gap: 20px;
 	}
+
+	.blog-image {
+		width: 200px;
+		height: 200px;
+	}
+
+	.blog-image:hover .inner {
+	transform: rotateY(180deg);
 }
+}*/
 
 @media screen and (min-width: 1000px){
 	.gallery {
 		margin: 30px 0;
 		display: grid;
 	  grid-template-columns: 250px 250px 250px;
-	  grid-template-rows: 250px 250px;
 	  grid-row-gap: 20px;
 	  grid-column-gap: 20px;
+	}
+
+	.blog-image {
+		width: 250px;
+		height: 250px;
+	}
+
+	.front img {
+		width: 250px;
+		height: 250px;
+
+		filter: sepia(20%) saturate(120%) contrast(110%) brightness(95%);
+	}
+
+	.blog-image:hover .inner {
+		transform: rotateY(180deg);
+	}	
+
+	.blog-image:focus .inner {
+		transform: rotateY(180deg);
 	}
 }

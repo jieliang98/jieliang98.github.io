@@ -5,70 +5,176 @@
 	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
 	<link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/blog.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="javascript/main.js"></script>
 	<title>Jieliang's Personal Portfolio</title>
 </head>
 <body>
-	<div class="skip"><a href="#main">Skip to Main Content</a></div>
+	<div class="skip"><a tabindex="1" href="#main">Skip to Main Content</a></div>
 	<div class="navigation">
 		<nav>
 			<ul>
+				<li><a href="index.html" tabindex="1">About</a></li>
+				<li><a href="experience.html" tabindex="1">Experience</a></li>
+				<li><a href="projects.html" tabindex="1">Projects</a></li>
+				<li><a href="blog.html" id="current" tabindex="1">Blog</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="navigation-mobile">
+		<div class="top-bar">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			   <i class="fa fa-bars"></i>
+			 </a>
+		</div>
+		<nav id="navigation-hamburger">
+			<ul>
 				<li><a href="index.html">About</a></li>
 				<li><a href="experience.html">Experience</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="blog.html" id="current">Blog</a></li>
+				<li><a href="projects.html" id="current">Projects</a></li>
+				<li><a href="blog.html">Blog</a></li>
 			</ul>
 		</nav>
 	</div>
 
 	<header class="intro">
-		<img src="images/potrait.jpg" alt="potrait"/>
+		<img src="images/website-logo.png" alt="potrait"/>
 		<p>Hi, I'm Jieliang. Welcome to my portfolio website.</p>
 	</header>
 
-<!-- 	<header>
-		<h2>Travel Blog</h2>
-		<p>Description</p>
-	</header> -->
-
 	<div class="san-fran" id="main">
-		<h2>Yosemite</h2>
+		<h2>West Coast</h2>
 		<div class="wrapper">
 			<div class="gallery">
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/wc1.jpeg" alt="sanFransisco">
+						</div>
+						<div class="back">
+							<h4>San Fransisco</h4>
+						</div>						
+					</div>
+				</div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/wc2.jpeg" alt="pacificCoastHighway">
+						</div>
+						<div class="back back-odd">
+							<h4>Pacific Coast Highway</h4>
+						</div>						
+					</div>
+				</div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/wc3.jpeg" alt="goldenGate">
+						</div>
+						<div class="back">
+							<h4>Golden Gate Bridge</h4>
+						</div>						
+					</div>
+				</div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/wc4.jpeg" alt="tunnelView">
+						</div>
+						<div class="back back-odd">
+							<h4>Yosemite Tunnel View</h4>
+						</div>						
+					</div>
+				</div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/wc5.jpeg" alt="halfDome">
+						</div>
+						<div class="back">
+							<h4>Yosemite Half Dome</h4>
+						</div>						
+					</div>
+				</div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/wc6.jpeg" alt="grandCanyon">
+						</div>
+						<div class="back back-odd">
+							<h4>Grand Canyon</h4>
+						</div>						
+					</div>
+				</div>
 			</div>			
 		</div>
 	</div>
 
-	<div class="san-fran">
-		<h2>South Korea</h2>
-		<div class="wrapper">
-			<div class="gallery">
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
-			</div>			
-		</div>
-	</div>
-
-	<div class="san-fran">
+	<div class="new-york">
 		<h2>New York</h2>
 		<div class="wrapper">
 			<div class="gallery">
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
-				<div class="image1"></div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/ny1.jpeg" alt="topOfTheRock">
+						</div>
+						<div class="back">
+							<h4>Top of the Rock</h4>
+						</div>						
+					</div>
+				</div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/ny2.jpeg" alt="publicLibrary">
+						</div>
+						<div class="back back-odd">
+							<h4>New York Public Library</h4>
+						</div>						
+					</div>
+				</div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/ny3.jpeg" alt="newYorkView">
+						</div>
+						<div class="back">
+							<h4>View From Staten Island Ferry</h4>
+						</div>						
+					</div>
+				</div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/ny4.jpeg" alt="grandCentralTerminal">
+						</div>
+						<div class="back back-odd">
+							<h4>Grand Central Terminal</h4>
+						</div>						
+					</div>
+				</div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/ny5.jpeg" alt="manhattanBridge">
+						</div>
+						<div class="back">
+							<h4>Manhattan Bridge</h4>
+						</div>						
+					</div>
+				</div>
+				<div class="blog-image" tabindex="1">
+					<div class="inner">
+						<div class="front">
+							<img src="images/ny6.jpeg" alt="newYorkView2">
+						</div>
+						<div class="back back-odd">
+							<h4>View from Brooklyn</h4>
+						</div>						
+					</div>
+				</div>
 			</div>			
 		</div>
 	</div>	
