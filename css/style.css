@@ -530,10 +530,9 @@ img {
 .project1 {
 	grid-column: 2 / span 1;
 	grid-row: 1 / span 1;
-	color: white;
 }
 
-.project1 a, .project4 a {
+.project4 a {
 	border-color: white;
 	color: white;
 }
@@ -562,7 +561,7 @@ img {
 }
 
 .project-image1 {
-	background-image: url("../images/dash.jpg");
+	background-image: url("../images/wave.jpg");
 	grid-column: 1 / span 3;
 	grid-row: 1 / span 1;
 	height: 100%;
@@ -586,7 +585,7 @@ img {
 }
 
 .project-image4 {
-	background-image: url("../images/party.jpg");
+	background-image: url("../images/dark.jpg");
 	grid-column: 1 / span 3;
 	grid-row: 4 / span 1;
 	height: 100%;
@@ -697,6 +696,29 @@ img {
 		transform: rotateY(180deg);
 	}
 }
+
+
+@media screen and (prefers-reduced-motion: reduce){
+	html{
+  		scroll-behavior: unset;
+	}
+
+	.skip a{
+		-webkit-transition: none;
+		transition: none;
+	}
+
+	.intro img {
+		animation: none;
+	}
+
+	.blog-image, .inner {
+		transition: none;
+	}	
+}
+
+
+
 
 
 
