@@ -6,6 +6,11 @@ body {
 	font-family: 'Source Sans Pro';
 }
 
+h1 {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
 h2 {
 	font-size: 3.5rem;
 }
@@ -557,7 +562,7 @@ img {
 }
 
 .project-image1 {
-	background-image: url("../images/dash.png");
+	background-image: url("../images/dash.jpg");
 	grid-column: 1 / span 3;
 	grid-row: 1 / span 1;
 	height: 100%;
@@ -581,7 +586,7 @@ img {
 }
 
 .project-image4 {
-	background-image: url("../images/events.jpeg");
+	background-image: url("../images/party.jpg");
 	grid-column: 1 / span 3;
 	grid-row: 4 / span 1;
 	height: 100%;
@@ -644,7 +649,7 @@ img {
 }
 
 .back {
-  background-color: dodgerblue;
+  background-color: #00008B;
   color: white;
   transform: rotateY(180deg);
   text-align: center;
@@ -659,7 +664,7 @@ img {
 }
 
 .back-odd {
-	background-color: red;
+	background-color: #8b0000;
 }
 
 
