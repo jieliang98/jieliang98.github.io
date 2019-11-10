@@ -10,7 +10,7 @@ h2 {
 	font-size: 3.5rem;
 }
 
-h4 {
+h3 {
   margin: 15px 0;
 }
 
@@ -58,7 +58,7 @@ section {
 	color: white;
 }
 
-.navigation nav ul li #current {
+.navigation nav ul li .current {
 	color: #e3ff00;
 }
 
@@ -102,7 +102,7 @@ section {
 	color: white;
 }
 
-.navigation-mobile nav ul li #current {
+.navigation-mobile nav ul li .current {
 	color: #e3ff00;
 }
 
@@ -151,7 +151,7 @@ section {
 
 .about-me a {
 	text-decoration: none;
-	color: purple;
+	color: blue;
 }
 
 .about-me .info img {
