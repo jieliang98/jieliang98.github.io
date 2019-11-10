@@ -532,11 +532,6 @@ img {
 	grid-row: 1 / span 1;
 }
 
-.project4 a {
-	border-color: white;
-	color: white;
-}
-
 .project2 {
 	grid-column: 2 / span 1;
 	grid-row: 2 / span 1;
@@ -550,7 +545,6 @@ img {
 .project4 {
 	grid-column: 2 / span 1;
 	grid-row: 4 / span 1;
-	color: white;
 }
 
 .project-image {
@@ -585,7 +579,7 @@ img {
 }
 
 .project-image4 {
-	background-image: url("../images/dark.jpg");
+	background-image: url("../images/orange.png");
 	grid-column: 1 / span 3;
 	grid-row: 4 / span 1;
 	height: 100%;
