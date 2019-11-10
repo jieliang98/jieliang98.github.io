@@ -78,6 +78,7 @@ section {
 
 .top-bar a {
 	vertical-align: middle;
+	text-decoration: none;
 }
 
 .top-bar a.icon{
